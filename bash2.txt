@@ -1,0 +1,52 @@
+1. touch bash2.txt
+2. cd ~
+3. mkdir test3
+
+cd ~/test3
+4. touch file4.txt
+touch file5.txt
+touch file6.txt
+
+echo -e "row1\n row2\n row3\n row4\n" >> file4.txt
+echo -e "row1\n row2\n row3\n row4\n" >> file5.txt
+echo -e "row1\n row2\n row3\n row4\n" >> file6.txt
+
+5. grep row2 file5.txt
+
+cd ~
+6. grep -R row test3
+
+cd test3
+7. grep -ic row file6.txt
+8. $ find . -name file5.txt
+9. $ find . -name "file5.txt" -delete
+10. echo test > file4.txt
+11. sed -i 's/test/fail/' file4.txt
+12. echo "test" >> file4.txt
+13. ps all
+14. kill 666
+15. ping rusau.net
+16. ping -c 5 rusau.net
+17. curl -X GET "https://petstore.swagger.io/v2/pet/findByStatus?status=available"
+18. curl -X 'POST' \
+  'https://petstore.swagger.io/v2/pet' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "id": 1000,
+  "category": {
+    "id": 1001,
+    "name": "Jack"
+  },
+  "name": "doggie",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "available"
+}'
